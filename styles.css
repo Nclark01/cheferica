@@ -1,0 +1,210 @@
+/* Reset some default styles for consistency */
+
+body, h1, p, ul, nav {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333333;
+	background-color: #000000;
+}
+
+a {
+    color: white;              /* matches current social icon color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00ff7f;            /* green accent on hover */
+}
+
+h1 {
+    font-family: 'Kefa', sans-serif;
+    font-size: 26px;
+}
+
+.centered {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.coming-soon {
+    font-size: 24px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+header {
+    background-color: #000000; /* Updated header background color */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Align logo to the left and navigation to the right */
+    align-items: center; /* Vertically center content */
+}
+
+/* Updated logo styling */
+.logo {
+    width: 150px; /* Set the width to 175px */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Adjust margin for spacing */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* White default */
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ff7f; /* Green on hover */
+    border-bottom: 2px solid #00ff7f;
+}
+
+.social-icon {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #00ff7f; /* Green on hover */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: black; /* blends with the site theme */
+    padding: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;       /* keeps proportions */
+    max-height: 100vh;  /* never exceeds screen height */
+    object-fit: contain; /* full image framed, no cropping */
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Remove space between header and hero */
+header {
+    margin-bottom: 0;
+}
+
+/* Two Columns Section */
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 25px 0;
+}
+
+.left-column, .right-column {
+    flex: 1 1 300px; /* Ensures columns are at least 300px wide */
+    max-width: 400px; /* Sets a maximum width */
+    text-align: right;
+}
+
+.left-column h3, .right-column h3 {
+    font-size: 20px;
+    color: #ffffff; /* Main text color */
+    margin-bottom: 15px;
+}
+
+.left-column p, .right-column p {
+    font-size: 14px;
+    color: #666666; /* Secondary text color */
+    line-height: 1.6;
+}
+
+/* Styling Chef's Photo */
+.chef-photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin: 10px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Icons in Contact Section */
+.social-icons a {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 14px;
+    color: #959BA6; /* Neutral grey */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #67f204; /* Slightly bright green hover */
+}
+
+
+footer {
+    background-color: #000; /* Updated footer background color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Logo styling */
+.logo {
+    height: 100px;
+    margin-left: 20px; /* Adjust margin for spacing */
+}
