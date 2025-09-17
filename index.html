@@ -24,7 +24,7 @@
 					<h1><strong>Chef Erica Joy</strong><br />
 					Bringing Flavor & Joy to Your Table<br />
 					<br>
-					Private Chef & Catering for intimate dinners and unforgettable events.</h1>
+					Private Chef & catering for intimate dinners and unforgettable events.</h1>
 				</div>
 			</header>
 
@@ -108,17 +108,31 @@
 						<p>For quick questions, special requests, or details you’d like clarified, please fill out the form below and you’ll get a response as soon as possible.</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="https://formspree.io/f/xwpndyyd">
+								<form method="post" action="https://formspree.io/f/xwpndwyd" target="_blank">
 									<div class="row gtr-uniform gtr-50">
-										<!--  -->
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<!-- Hidden subject line -->
+										<input type="hidden" name="_subject" value="New Contact Form Submission from Chef Erica Website" />
+
+										<!-- Honeypot for spam protection -->
+										<div style="display:none;">
+											<label>Don't fill this out if you're human: <input type="text" name="_gotcha" /></label>
+										</div>
+
+										<!-- Name -->
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required /></div>
+										<!-- Email -->
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required/></div>
+										<!-- Message -->
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" required></textarea></div>
+
+										<!-- Submit Button -->
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" /></li>
+											</ul>
+										</div>
 									</div>
 								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
