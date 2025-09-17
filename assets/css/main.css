@@ -3246,36 +3246,5 @@ input, select, textarea {
 
 	}
 
-	/* ============================= */
-/* Custom overrides for headings */
-/* ============================= */
 
-	#one header.major h2 { margin-bottom: .3em; }
-
-	#one header.major .subhead {
-	font-size: 1em;
-	line-height: 1.2;
-	color: #5f5f5f;       /* adjust to taste */
-	margin-top: 0;
-	margin-bottom: 0;
-	}
-
-	@media screen and (max-width: 736px) {
-	#one header.major h2 { margin-bottom: .2em; }
-	#one header.major .subhead {
-		display: block;
-		margin-top: .45em;
-	}
-	}
-
-		/* Center headings on mobile only */
-	@media screen and (max-width: 736px) {
-	#main h1,
-	#main h2,
-	#main h4,
-	#main h5,
-	#main h6 {
-		text-align: center;
-	}
-	}
 
