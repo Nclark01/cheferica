@@ -3252,7 +3252,7 @@ input, select, textarea {
 
 	header.major h1.subhead {
 		margin-top: 0.1em;
-		font-size: 1.1em;
+		font-size: 1.25em;
 	}
 
 	@media screen and (max-width: 736px) {
